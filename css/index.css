@@ -1,0 +1,118 @@
+.content-box {
+  height: 866px;
+  margin: 0 auto;
+  background: #090d13;
+}
+.content-box .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 79px;
+  padding: 0 10%;
+}
+.content-box .header .logo img {
+  width: 150px;
+  height: 41px;
+}
+.content-box .header .nav ul {
+  display: flex;
+  align-items: center;
+}
+.content-box .header .nav ul li {
+  margin: 0 18px;
+}
+.content-box .header .nav ul a {
+  color: white;
+  font-size: 24px;
+}
+.content-box .search {
+  width: 100px;
+  border-radius: 30px;
+  background: #141a26;
+}
+.content-box img {
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+.banner {
+  height: 866px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../images/index-video-cover.png) no-repeat;
+  background-size: 1920px 866px;
+}
+.banner .mask {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+.banner .icon-fixed {
+  position: fixed;
+  top: 396px;
+  right: 0;
+  width: 60px;
+  height: 169px;
+  background: #086ff9;
+  border-radius: 8px;
+}
+.banner h2 {
+  margin: 134px 0 18px 0;
+  font-size: 48px;
+  font-weight: 400;
+  color: #cde7ff;
+}
+.banner p {
+  width: 508px;
+  height: 34px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #cde7ff;
+}
+.banner .video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 61px 0 41px 0;
+}
+.banner .video img {
+  width: 56px;
+  height: 56px;
+}
+.banner .video span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #acbad0;
+}
+.banner .examples {
+  display: flex;
+  justify-content: space-around;
+}
+.banner .examples .example-box-l {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 144px;
+  height: 144px;
+  border: 1px solid #043880;
+  border-radius: 50%;
+  margin: 0 90px;
+}
+.banner .examples .example-box-l .example-box-m {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 127px;
+  height: 127px;
+  background: #043880;
+  border-radius: 50%;
+}
+.banner .examples .example-box-l .example-box-m span {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}

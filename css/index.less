@@ -1,8 +1,6 @@
-
-
 .content-box {
   // width: 1920px;
-  height: 866px;
+  height: 1080px;
   margin: 0 auto;
   background: #090d13;
 
@@ -10,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 79px;
+    height: 80px;
     padding: 0 10%;
 
     .logo img {
@@ -19,22 +17,37 @@
     }
 
     .nav ul {
+      width: 700px;
       display: flex;
+      justify-content: space-between;
       align-items: center;
       li {
         margin: 0 18px;
-      }
 
-      a {
-        color: white;
-        font-size: 24px;
+        a {
+          color: white;
+          font-size: 14px;
+        }
+
+        a:hover {
+          color: #093f88;
+          text-decoration: underline;
+          text-underline-offset: 10px;
+        }
       }
     }
   }
+
   .search {
-    width: 100px;
     border-radius: 30px;
     background: #141a26;
+    // input的原始边框与背景颜色要重新设置
+    input {
+      width: 50px;
+      border-radius: 30px;
+      background: #141a26;
+      border: none;
+    }
   }
   img {
     width: 20px;
@@ -44,29 +57,39 @@
 }
 
 .banner {
-  height: 866px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 1000px;
   background: url(../images/index-video-cover.png) no-repeat;
-  background-size: 1920px 866px;
+  background-size: 100% 100%;
 
   .mask {
     width: 100%;
     height: 100%;
     display: flex;
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
     background: rgba(0, 0, 0, 0.6);
   }
   .icon-fixed {
-    position: fixed;
+    position: absolute;
     top: 396px;
     right: 0;
     width: 60px;
     height: 169px;
+    padding: 20px;
     background: #086ff9;
     border-radius: 8px;
+
+    span {
+      width: 18px;
+      height: 100px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+
+    img {
+      margin: 0 auto;
+    }
   }
 
   h2 {
@@ -128,5 +151,235 @@
         }
       }
     }
+  }
+}
+
+// 第二页
+.content-exemple {
+  height: 866px;
+  position: relative;
+  background: #141a26;
+  .header {
+    width: 144px;
+    height: 50px;
+    font-size: 36px;
+    margin: 0 auto;
+    padding: 80px 0;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 50px;
+    background: linear-gradient(90deg, #75a3ff 0%, #abd7ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bg {
+    width: 68%;
+    height: 350px;
+    position: absolute;
+    top: 366px;
+    left: 20%;
+    background: url(../images/index-carousel-bg.png) no-repeat;
+    .text {
+      float: left;
+      p {
+        width: 289px;
+        height: 72px;
+        margin-top: 72px;
+        font-size: 24px;
+        font-weight: 500;
+        color: #cde7ff;
+      }
+      .icon {
+        width: 266px;
+        height: 80px;
+        position: relative;
+        h2 {
+          position: absolute;
+          // width: 192px;
+          // height: 67px;s
+          font-size: 48px;
+          font-weight: 500;
+          color: #ffffff;
+          overflow: visible;
+          z-index: 1;
+        }
+        img {
+          position: absolute;
+          top: 43px;
+          left: 0;
+          margin-top: -22px;
+          margin-left: -14px;
+          width: 232px;
+          height: 58px;
+        }
+      }
+    }
+  }
+  .pic {
+    position: absolute;
+    top: 203px;
+    left: 36%;
+  }
+}
+// 第三页
+.enter-1 {
+  height: 740px;
+  background: url(../images/pc11.png);
+  position: relative;
+  .text {
+    position: absolute;
+    width: 16%;
+    height: 146px;
+    top: 250px;
+    right: 18%;
+    h2 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 50px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+  }
+}
+// 第四页
+.enter-2 {
+  display: flex;
+  height: 740px;
+  background: url(../images/index-animation-bg2.png);
+  .w {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  img {
+    width: 780px;
+    height: 530px;
+    margin-top: 58px;
+    padding-left: 62px;
+  }
+  .text {
+    h2 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 50px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+  }
+}
+// 第五页
+.enter-3 {
+  height: 740px;
+  background: url(../images/index-animation-bg3.png);
+
+  .w {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  img {
+    width: 780px;
+    height: 530px;
+    margin-top: 58px;
+    padding-left: 62px;
+  }
+  .text {
+    h2 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 50px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+  }
+}
+.enter-4 {
+  height: 740px;
+  background: url(../images/index-animation-bg3.png);
+
+  .w {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  img {
+    width: 780px;
+    height: 530px;
+    margin-top: 58px;
+    padding-left: 62px;
+  }
+  .text {
+    h2 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 50px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+  }
+}
+// 第七页
+.table {
+  height: 740px;
+  background: #141a26;
+}
+// 第八页
+.end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 960px;
+  background: url(../images/download-bg.jpg);
+
+  img {
+    width: 700px;
+    height: 446px;
+    margin: 205px 30% 0px;
+  }
+  p {
+    width: 975px;
+    height: 44px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #333333;
+    margin: 50px 0 24px;
+    background: linear-gradient(90deg, #1764ff 0%, #acd8ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  a {
+    width: 9%;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    background: #086ff9;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
   }
 }

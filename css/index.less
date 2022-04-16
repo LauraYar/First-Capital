@@ -169,6 +169,7 @@
     color: #ffffff;
     line-height: 50px;
     background: linear-gradient(90deg, #75a3ff 0%, #abd7ff 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -343,8 +344,108 @@
 }
 // 第七页
 .table {
-  height: 740px;
+  height: 1510px;
   background: #141a26;
+  // text-align: center;
+
+  .w {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 36px;
+      font-weight: 500;
+      color: #333333;
+      background: linear-gradient(90deg, #75a3ff 0%, #abd7ff 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 144px auto 52px;
+    }
+    .table-1 {
+      table {
+        border: 1px solid #141f29;
+        th {
+          font-size: 24px;
+          font-weight: 600;
+          color: #cde7ff;
+        }
+
+        td {
+          font-size: 18px;
+          font-weight: 400;
+          color: #cde7ff;
+          line-height: 25px;
+          padding: 0 50px;
+        }
+        tr th:nth-child(1) {
+          background: #07224c;
+        }
+        tr th:nth-child(2) {
+          background: #009ca7;
+        }
+        tr th:nth-child(3) {
+          background: #086ff9;
+        }
+        tr td:nth-child(1) {
+          font-size: 20px;
+          font-weight: 400;
+          color: #cde7ff;
+          background: #1a2433;
+        }
+        tr td:nth-child(2) {
+          width: 500px;
+          background: #153a3c;
+        }
+        tr td:nth-child(3) {
+          width: 484px;
+          background: #0c2a68;
+        }
+      }
+    }
+
+    .table-2 {
+      table {
+        td {
+          width: 200px;
+          height: 144px;
+          padding-left: 26px;
+
+          h4 {
+            width: 72px;
+            height: 25px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #ffffff;
+            margin-bottom: 20px;
+          }
+
+          p{
+            
+            font-size: 14px;
+            font-weight: 400;
+            color: #FFFFFF;
+            line-height: 28px;
+          }
+        }
+        td:nth-child(2) {
+          //  display: flex;
+          //  flex-direction: column;
+          a {
+            display: block;
+            font-size: 16px;
+            font-weight: 500;
+            color: #086ff9;
+            margin: 36px;
+          }
+        }
+      }
+    }
+  }
 }
 // 第八页
 .end {
@@ -352,7 +453,8 @@
   flex-direction: column;
   align-items: center;
   height: 960px;
-  background: url(../images/download-bg.jpg);
+  background: url(../images/download-bg.jpg) no-repeat;
+  background-size: cover;
 
   img {
     width: 700px;
@@ -367,6 +469,7 @@
     color: #333333;
     margin: 50px 0 24px;
     background: linear-gradient(90deg, #1764ff 0%, #acd8ff 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
